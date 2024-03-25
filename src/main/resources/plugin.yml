@@ -1,0 +1,7 @@
+name: '${projectName}'
+version: '${projectVersion}'
+main: '${projectMainClass}'
+api-version: 1.16
+authors: [ CKATEPTb ]
+description: Jyraf addon replaces the asynchronous entity repository with a synchronous one.
+depend: [ "Jyraf-Core" ]
