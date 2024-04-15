@@ -13,7 +13,7 @@ plugins {
 //    id("io.papermc.paperweight.userdev").version("1.5.11")
 }
 group = "dev.ckateptb.minecraft"
-version = "1.0.0-SNAPSHOT"
+version = "1.0.1-SNAPSHOT"
 
 val rootPackage = "${project.group}.${project.name.toLowerCase().split('-')[0]}"
 val internal = "${rootPackage}.internal"
@@ -28,7 +28,7 @@ dependencies {
     // paperweight.paperDevBundle("1.20.4-R0.1-SNAPSHOT")
     compileOnly("com.destroystokyo.paper:paper:1.16.5-R0.1-SNAPSHOT")
 
-    compileOnly("dev.ckateptb.minecraft:Jyraf-Core:1.18.0-SNAPSHOT")
+    compileOnly("dev.ckateptb.minecraft:Jyraf-Core:1.21.0-SNAPSHOT")
 
     compileOnly("org.projectlombok:lombok:+")
     annotationProcessor("org.projectlombok:lombok:+")
