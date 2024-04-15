@@ -36,6 +36,11 @@ public class SynchronousEntityRepository implements EntityRepository, WorldRepos
     }
 
     @Override
+    public Mono<Boolean> hasChunk(Long chunkKey) {
+        return Mono.just(this.world.isChunkLoaded(chunkKey.intValue(), (int) (chunkKey >> 32)));
+    }
+
+    @Override
     public Mono<ChunkRepository<Entity>> getChunk(Long chunkKey) {
         return Mono.empty();
     }
